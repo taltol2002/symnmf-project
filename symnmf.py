@@ -19,7 +19,6 @@ def main():
     It validates the arguments, reads the input data, and runs the specified goal function.
     The results are printed in the required format. If any error occurs during the process, an error message is printed and the program exits.
     """
-
     args_data = validate_args(sys.argv)
     if args_data is None:
         print_error(ERROR_OCCURRED)
