@@ -118,7 +118,7 @@ def validate_args(args):
         return None
     try:
         k = int(args[1])
-        if k <= 0:
+        if k <= 1:
             return None
     except ValueError:
         print_error(ERROR_OCCURRED)

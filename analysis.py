@@ -23,7 +23,7 @@ def main():
     file_name = sys.argv[2]
 
     data = read_csv_file(file_name) # Reads the CSV file and returns a list of lists (2D list)
-    if not (1 <= k < len(data)):
+    if not (1 < k < len(data)):
         print_error(ERROR_OCCURRED)
 
     data_np = np.array(data) # Convert to NumPy array for efficient processing
