@@ -438,7 +438,7 @@ void update_h(double** H, double** W, double **WH, double **Ht, double **HtH,dou
         for (j = 0; j < k; j++) {
             denom = HHtH[i][j];
             nom = WH[i][j];
-            if (denom == 0) denom+=eps_h; /* Avoid division by zero */
+            denom += eps_h; /* Avoid division by zero */
             
             H[i][j] = H[i][j] * (1 - BETA + BETA * (nom / denom));
         }
